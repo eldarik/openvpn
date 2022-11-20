@@ -16,8 +16,15 @@
 
 ### on your local machine
 ```bash
-  wget --no-check-certificate http://<IP>
-  mv index.html vpn.opvn
+  wget --no-check-certificate https://<IP>:8080
+  mv index.html vpn.ovpn
 ```
 
 Then open `vpn.opvn` in vpn client. I use TunnelBlick.
+
+
+### vps
+```
+  make remove-vpn-server-config
+```
+to remove unneeded container

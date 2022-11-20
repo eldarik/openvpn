@@ -12,3 +12,6 @@ setup-vpn-server:
 
 serve-vpn-config:
 	docker-compose -f vpn.docker-compose.yml up -d vpn-serve-config
+
+remove-vpn-server-config:
+	docker-compose -f vpn.docker-compose.yml kill vpn-serve-config
